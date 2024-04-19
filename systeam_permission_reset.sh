@@ -4,5 +4,8 @@ chown root:root /mnt/var /mnt/var/* && chown root:staff /mnt/var/local && chown 
 
 chown systeam:systeam /mnt/var/cw/systeam -R && chown ansible:ansible /mnt/var/cw/ansible -R && chown platformops:platformops /mnt/var/cw/platformops -R
 
+echo "ownership changed"
+
 chmod 750 /mnt/var/cw/systeam/.openssh && chmod 640 /mnt/var/cw/systeam/.openssh/authorized_keys
 
+echo "permission changed"
